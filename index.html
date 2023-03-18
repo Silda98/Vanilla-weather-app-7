@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -38,7 +39,6 @@
               </div>
             </div>
           </form>
-
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
@@ -49,18 +49,19 @@
           <div class="row">
             <div class="col-6">
               <div class="clearfix weather-temperature">
-                <div class="float-left"></div>
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                   alt="Clear"
                   id="icon"
                   class="float-left"
                 />
-                <strong id="temperature"></strong>
-                <span class="units">
-                  <a href="#" id="celsius-link" class="active"> ℃ </a>|
-                  <a href="#" id="fahrenheit-link"> ℉ </a></span
-                >
+                <div class="float-left">
+                  <strong id="temperature"></strong>
+                  <span class="units">
+                    <a href="#" id="celsius-link" class="active"> ℃ </a>|
+                    <a href="#" id="fahrenheit-link"> ℉ </a></span
+                  >
+                </div>
               </div>
             </div>
             <div class="col-6">
@@ -71,7 +72,15 @@
             </div>
           </div>
         </div>
-        <small> Open-sorce , by Silda Saliu </small>
+        <small>
+          <a
+            href="https://github.com/Silda98/Vanilla-weather-app-7"
+            target="_blank"
+          >
+            Open-source code,
+          </a>
+          by Silda Saliu
+        </small>
       </div>
     </div>
     <script src="src/app.js"></script>
